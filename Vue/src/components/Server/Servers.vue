@@ -1,8 +1,7 @@
 <template>
     <div class="col-lg-12">
         <ul class="list-group">
-            <server v-for="server in servers"
-            :server="server"></server>
+          <server v-for="server in servers" :server="server"></server>
         </ul>
     </div>
 </template>
@@ -14,7 +13,7 @@ export default {
     components: {
         'server': Server
     },
-    props: { 
+    props: {
         status: {
             type: String
         }
